@@ -1,0 +1,215 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* bree-serif-regular - latin */
+
+
+/* CSS VARAIBLES */
+:root{
+    --navbar-height: 59px;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    
+    font-family: 'Bree Serif', serif;
+    display:flex;
+    align-items: center;
+
+}
+/* Logo and image */
+#logo{
+    margin: 10px 34px;
+
+}
+#logo img{
+    max-width: 100px;
+    height:100px;
+    margin: 3px 6px;
+}
+
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content:"";
+    background: black;
+    opacity: 0.3;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    
+    
+}
+#navbar ul li{
+    color-style:white;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: #373D3F;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white ;
+}
+#navbar ul li a:active{
+    color:black;
+    background-color: white ;
+}
+
+/* Home Sectiom */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content:"";
+    background: url(../pictures/home-background.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    top: 0;
+    left: 0;
+    position:absolute;
+    height: 1100px;
+    width:100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+
+#home h1{
+    top: 120px;
+    position: absolute;
+    
+
+    color: #373D3F;
+    text-align: center;
+}
+#home box{
+    position:relative;
+}
+#home p{
+    border-radius: 12px;
+    overflow-x: scroll;
+    border: 2px solid black;
+    background: rgba(0,0,0,0.2);
+    line-height: 30px;
+    font-family: 'Bree Serif', serif;
+    font-size: large;
+    margin-top: 10px;
+    width: 120%;
+    height:400px;
+    display: flex;
+    
+    top:150px;
+    position: relative;
+    color: wheat;
+    text-align: center;
+}
+
+/* Utility classes */
+.h-primary{
+    
+    color:white;
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.h-secondary{
+    display: flex;
+    color:white;
+    font-size: 2.0rem;
+   
+}
+
+.button{
+    position: relative;
+    
+    top:40%;
+    margin:auto;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    
+    height:40px;
+    margin-top:20px;
+    padding:0 4px;
+    width:100px;
+    border-radius: 7px;
+    transition: all 0.3s ease 0s;
+}
+.button:hover{
+   
+    background-color:whitesmoke;
+    opacity: 0.5;
+    color:black;
+    border: 2px solid grey;
+    opacity: 1;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Services-Section */
+.services-container{
+    background: url(../pictures/pexels-lukas-349609.jpg);
+    height: 1100px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#services-page ul li a{
+    color: white;
+    font-family:'Bree Serif', serif; 
+}
+#services{
+
+    margin:34px;
+    display:flex;
+    
+}
+#services .box{
+    padding:4px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 4px;
+    border: 2px solid black;
+    padding:12px;
+    height:250px;
+    overflow-x: scroll;
+}
+#services .food-icons{
+    size: 90px;
+     display:flex;
+
+}
+
+#services p{
+    color:white;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
